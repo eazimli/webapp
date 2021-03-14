@@ -15,15 +15,10 @@
 <body>
 <table>
     <c:forEach items="${courses}" var="course">
-        <tr>
+      <tr>
             <td>${course.id}</td>
             <td> ${course.department}</td>
             <td> ${course.courseName}</td>
-            <td>
-                <form action="courses" method="post">
-                    <input type="hidden" name="courseId" value="${course.id}" >
-                    <input type="submit" name="add">
-                </form></td>
         </tr>
     </c:forEach>
 
